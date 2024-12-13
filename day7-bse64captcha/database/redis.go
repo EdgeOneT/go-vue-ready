@@ -11,7 +11,7 @@ var Rdb *redis.Client
 
 func initRedis() {
 	ctx := context.Background()
-	rdb = redis.NewClient(&redis.Options{
+	Rdb = redis.NewClient(&redis.Options{
 		Addr:     config.Cfg.Redis.Host,
 		Password: config.Cfg.Redis.Password,
 		DB:       0,

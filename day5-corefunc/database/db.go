@@ -3,6 +3,7 @@ package database
 import (
 	"fmt"
 	"go-vue-ready/day4-Gin_middleware/test2/config"
+	"go-vue-ready/day7-bse64captcha/models"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"log"
@@ -27,5 +28,6 @@ func InitDB() {
 	if err != nil {
 		log.Fatal("Failed to connect to the database:", err)
 	}
+	DB.AutoMigrate(&models.Role{}, &models.Permission{})
 	log.Println("Database connection successful")
 }

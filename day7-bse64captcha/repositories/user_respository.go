@@ -1,7 +1,7 @@
 package repositories
 
 import (
-	"go-vue-ready/day5-corefunc/models"
+	"go-vue-ready/day7-bse64captcha/models"
 	"gorm.io/gorm"
 )
 

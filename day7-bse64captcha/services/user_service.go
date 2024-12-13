@@ -1,8 +1,8 @@
 package services
 
 import (
-	"go-vue-ready/day5-corefunc/models"
-	"go-vue-ready/day5-corefunc/repositories"
+	"go-vue-ready/day7-bse64captcha/models"
+	"go-vue-ready/day7-bse64captcha/repositories"
 )
 
 type UserService struct {

@@ -2,7 +2,7 @@ package routes
 
 import (
 	"github.com/gin-gonic/gin"
-	"go-vue-ready/day5-corefunc/controllers"
+	"go-vue-ready/day7-bse64captcha/controllers"
 )
 
 func RegisterUserRoutes(r *gin.Engine, userController *controllers.UserController) {
@@ -10,5 +10,7 @@ func RegisterUserRoutes(r *gin.Engine, userController *controllers.UserControlle
 	{
 		userGroup.POST("/creat", userController.CreateUser)
 		userGroup.GET("/get", userController.GetUser)
+		userGroup.PUT("/:id", userController.UpdateUser)
+		userGroup.DELETE("/id", userController.DeleteUser)
 	}
 }

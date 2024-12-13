@@ -2,7 +2,7 @@ package database
 
 import (
 	"fmt"
-	"go-vue-ready/day4-Gin_middleware/test2/config"
+	"go-vue-ready/day7-bse64captcha/config"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"log"
